@@ -1,7 +1,7 @@
 const VideoDetail = ({ selectedVideo }) => {
-  // if (!selectedVideo) {
-  //   return <div>loading...</div> 
-  // }
+  if (!selectedVideo) {
+    return <div>loading...</div> 
+  }
 
   const videoSrc = `https://www.youtube.com/embed/${selectedVideo.id.videoId}`;
   
